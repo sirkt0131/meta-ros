@@ -23,7 +23,6 @@ ROS_BUILD_DEPENDS = " \
     openssl \
     pkgconfig \
     udev \
-    curl \
 "
 
 ROS_BUILDTOOL_DEPENDS = " \
