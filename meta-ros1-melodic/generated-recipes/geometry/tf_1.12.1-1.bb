@@ -35,7 +35,6 @@ ROS_BUILDTOOL_DEPENDS = " \
 
 ROS_EXPORT_DEPENDS = " \
     geometry-msgs \
-    graphviz \
     message-filters \
     message-runtime \
     rosconsole \
@@ -50,7 +49,6 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
     geometry-msgs \
-    graphviz \
     message-filters \
     message-runtime \
     rosconsole \
