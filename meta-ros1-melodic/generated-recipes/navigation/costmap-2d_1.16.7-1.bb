@@ -97,10 +97,8 @@ DEPENDS += "${ROS_EXPORT_DEPENDS} ${ROS_BUILDTOOL_EXPORT_DEPENDS}"
 
 RDEPENDS_${PN} += "${ROS_EXEC_DEPENDS}"
 
-# matches with: https://github.com/ros-gbp/navigation-release/archive/release/melodic/costmap_2d/1.16.7-1.tar.gz
-ROS_BRANCH ?= "branch=release/melodic/costmap_2d"
-SRC_URI = "git://github.com/ros-gbp/navigation-release;${ROS_BRANCH};protocol=https"
-SRCREV = "7d8415d7f1dd06b717d0edccc345ced87cc18dce"
+SRC_URI = "git://git-codecommit.us-east-2.amazonaws.com/v1/repos/costmap_2d;protocol=https"
+SRCREV = "052bac72c40b5747123652f1d49accb04e56ee0b"
 S = "${WORKDIR}/git"
 
 ROS_BUILD_TYPE = "catkin"
