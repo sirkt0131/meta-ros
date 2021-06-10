@@ -1,0 +1,24 @@
+diff --git a/cmake_modules/FindSUITESPARSE.cmake b/cmake_modules/FindSUITESPARSE.cmake
+index 101b79b..02bf024 100644
+--- a/cmake_modules/FindSUITESPARSE.cmake
++++ b/cmake_modules/FindSUITESPARSE.cmake
+@@ -77,16 +77,16 @@ else( WIN32 )
+    IF ( SUITESPARSE_LIBRARY_DIR )
+ 
+        list ( APPEND SUITESPARSE_LIBRARIES amd)
+-       list ( APPEND SUITESPARSE_LIBRARIES btf)
++ #     list ( APPEND SUITESPARSE_LIBRARIES btf)
+        list ( APPEND SUITESPARSE_LIBRARIES camd)
+        list ( APPEND SUITESPARSE_LIBRARIES ccolamd)
+        list ( APPEND SUITESPARSE_LIBRARIES cholmod)
+        list ( APPEND SUITESPARSE_LIBRARIES colamd)
+  #     list ( APPEND SUITESPARSE_LIBRARIES csparse)
+        list ( APPEND SUITESPARSE_LIBRARIES cxsparse)
+-       list ( APPEND SUITESPARSE_LIBRARIES klu)
++ #     list ( APPEND SUITESPARSE_LIBRARIES klu)
+  #     list ( APPEND SUITESPARSE_LIBRARIES spqr)
+-       list ( APPEND SUITESPARSE_LIBRARIES umfpack)
++ #     list ( APPEND SUITESPARSE_LIBRARIES umfpack)
+ 
+        IF (APPLE)
+            list ( APPEND SUITESPARSE_LIBRARIES suitesparseconfig)
